@@ -34,30 +34,6 @@ int pop();
 
 int main()
 {
-/*
-    Node *a = new Node();
-    root = a;
-    Node *b = new Node();
-    a->value = 2;
-    b->value = 3;
-    a->next = b;
-    cout << root->value << " ";
-    cout << root->next->value << " " << endl;
-    insert(1);
-    cout << root->value << " ";
-    cout << root->next->value << " " ;
-    cout << root->next->next->value << " " << endl;
-    insert(0);
-    cout << root->value << " ";
-    cout << root->next->value << " " ;
-    cout << root->next->next->value << " ";
-    cout << root->next->next->next->value << " " << endl;
-    cout << "Pop is " << pop() << endl;
-    cout << root->value << " ";
-    cout << root->next->value << " " ;
-    cout << root->next->next->value << " " << endl;
-*/
-
     insert(0);
     insert(1);
     insert(2);
