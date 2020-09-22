@@ -1,4 +1,12 @@
-//Leetcode # 7 Reverse Integer
+// Leetcode# 7: Reverse Integer
+
+// Given a 32-bit signed integer, reverse digits of an integer.
+
+// Example 1:
+
+// Input: 123
+// Output: 321
+
 
 #include <iostream>
 #include<bits/stdc++.h> 
