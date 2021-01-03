@@ -1,0 +1,50 @@
+using System;
+// you can also use other imports, for example:
+using System.Collections.Generic;
+
+// you can write to stdout for debugging purposes, e.g.
+// Console.WriteLine("this is a debug message");
+
+class Solution {
+    public int solution(string[] T, string[] R) {
+        // write your code in C# 6.0 with .NET 4.5 (Mono)
+        
+        // potential pseudocode answer
+        // loop through the tests array
+        // if string contains, it can be grouped
+            // check if all are OK
+        // else if it's OK, add to sum
+        
+        var groupings = new HashSet<string>();
+        int group = 0;
+        int sum = 0;
+        int subgroupSum = 1;
+        
+        for (int i=0; i<T.Length; i++) {
+            // retrieve the last character of the string
+            if (Char.IsLetter(T[i][T[i].Length-1])) {
+                 
+                // if the string without the last character is not in the hash
+                // count it as a new group and add it
+                if (!groupings.Contains(T[i].Substring(0,T[i].Length-1).ToLower())) {
+                    group++;
+                    groupings.Add(T[i].Substring(0,T[i].Length-1));
+                }
+                if (!R[i].Equals("ok", StringComparison.InvariantCultureIgnoreCase)) {
+                    subgroupSum = 0;
+                }
+            } else {
+                // separate group without subgroups, add to hash and increase group count
+                group++;
+                groupings.Add(T[i]);
+                
+                // if group without subgroup is OK, add to sum
+                if (R[i].Equals("ok", StringComparison.InvariantCultureIgnoreCase)) {
+                    sum++;
+                }
+            }
+        }
+        
+        return (sum+subgroupSum)*100/group;
+    }
+}

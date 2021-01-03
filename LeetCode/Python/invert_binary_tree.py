@@ -65,8 +65,6 @@ class Solution:
         return postorder
 
 
-
-
 root = TreeNode(4)
 root.left = TreeNode(2)
 root.right = TreeNode(7)
