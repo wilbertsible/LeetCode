@@ -46,15 +46,11 @@ class ListNode:
 
 class Solution:
     def mergeKLists(self, lists: List[ListNode]) ->ListNode:
-        print(len(lists))
         if len(lists) < 1:
             return None
         while len(lists) > 1:
             tempList = []
             for i in range(0, len(lists) - 1, 2):
-                print(i)
-                print(lists[i])
-                print(lists[i+1])
                 out = self.mergeTwoLists(lists[i], lists[i+1])
                 tempList.append(out)
                 if len(lists) % 2 == 1:
@@ -121,11 +117,11 @@ lists = [None, a, None, g]
 
 mergeList = s.mergeKLists(lists)
 
-# print(mergeList.val)
-# print(mergeList.next.val)
-# print(mergeList.next.next.val)
-# print(mergeList.next.next.next.val)
-# print(mergeList.next.next.next.next.val)
-# print(mergeList.next.next.next.next.next.val)
-# print(mergeList.next.next.next.next.next.next.val)
-# print(mergeList.next.next.next.next.next.next.next.val)
+print(mergeList.val)
+print(mergeList.next.val)
+print(mergeList.next.next.val)
+print(mergeList.next.next.next.val)
+print(mergeList.next.next.next.next.val)
+print(mergeList.next.next.next.next.next.val)
+print(mergeList.next.next.next.next.next.next.val)
+print(mergeList.next.next.next.next.next.next.next.val)
