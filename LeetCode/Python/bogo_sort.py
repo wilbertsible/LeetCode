@@ -1,3 +1,5 @@
+#Implementation of BogoSort
+
 from random import shuffle
 
 def is_sorted(data) -> bool:
