@@ -1,4 +1,4 @@
-# LeetCode February Coding Challenge 2021 #5: Binary Tree Right Side View
+# LeetCode February Coding Challenge 2021 #6: Binary Tree Right Side View
 # Given a binary tree, imagine yourself standing on the right side of it, return the values of the nodes you can see ordered from top to bottom.
 
 # Example:

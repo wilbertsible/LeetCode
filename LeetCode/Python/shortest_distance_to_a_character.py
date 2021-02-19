@@ -1,4 +1,4 @@
-# LeetCode February Coding Challenge 2021 #5: Binary Tree Right Side View
+# LeetCode February Coding Challenge 2021 #7: Binary Tree Right Side View
 # Given a string s and a character c that occurs in s, return an array of integers answer where answer.length == s.length and answer[i] is the shortest distance from s[i] to the character c in s.
 
 # Example 1:
